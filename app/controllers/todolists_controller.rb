@@ -11,6 +11,14 @@ class TodolistsController < ApplicationController
     redirect_to '/top'
   end
 
+  def index
+    @lists = List.all
+  end
+  
+  def show
+    
+  end
+
   private
 
   def list_params
